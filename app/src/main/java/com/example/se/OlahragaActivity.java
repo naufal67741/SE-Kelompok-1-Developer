@@ -32,5 +32,6 @@ public class OlahragaActivity extends AppCompatActivity {
 
         Intent i = new Intent(getApplicationContext(),ResultActivity.class);
         startActivity(i);
+        finish();
     }
 }

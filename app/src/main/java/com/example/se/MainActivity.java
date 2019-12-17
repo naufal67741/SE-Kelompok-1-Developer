@@ -72,5 +72,6 @@ public class MainActivity extends AppCompatActivity {
     public void buttonOlahraga(View view) {
         Intent i = new Intent(getApplicationContext(),OlahragaActivity.class);
         startActivity(i);
+        finish();
     }
 }
