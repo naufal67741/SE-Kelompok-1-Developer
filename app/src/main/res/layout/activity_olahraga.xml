@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgolahraga"
+    android:orientation="vertical"
+    tools:context=".OlahragaActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/poppinsbold"
+        android:text="Calories you need to burn"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textSize="25dp" />
+
+
+    <TextView
+        android:id="@+id/jumlahKaloriTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/poppinssemibold"
+        android:text="476 cal"
+        android:textSize="60dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="350dp"
+        android:layout_gravity="center"
+        >
+
+        <TextView
+            android:layout_marginLeft="30dp"
+            android:layout_gravity="center"
+            android:fontFamily="@font/poppinsregular"
+            android:layout_width="wrap_content"
+            android:textSize="20dp"
+            android:layout_height="wrap_content"
+            android:text="Aku mau olahraga "
+            />
+        <EditText
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppinsregular"
+            android:layout_gravity="center"
+            android:inputType="number"
+            android:hint="............."
+            android:textSize="15dp"
+            android:id="@+id/berapaMenit"
+            />
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="menit !"
+            android:fontFamily="@font/poppinsregular"
+            android:textSize="20dp"
+            android:layout_gravity="center"
+            />
+
+
+    </LinearLayout>
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|bottom"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="20dp"
+        android:backgroundTint="@android:color/white"
+        android:onClick="hitungKalori"
+        android:src="@drawable/ic_check_circle_24px" />
+</LinearLayout>

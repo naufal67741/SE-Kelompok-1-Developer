@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bgresult"
+    tools:context=".ResultActivity">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/poppinsbold"
+        android:text="Calories result"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textSize="40dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="70dp"
+        android:fontFamily="@font/poppinsbold"
+        android:text="Calories intake"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textSize="25dp" />
+    <TextView
+        android:id="@+id/resultTotalKalori"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1000 cal"
+        android:layout_marginLeft="40dp"
+        android:fontFamily="@font/poppinssemibold"
+        android:textSize="25dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="0dp"
+        android:fontFamily="@font/poppinsbold"
+        android:text="Calories burned"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textSize="25dp" />
+    <TextView
+        android:id="@+id/resultBakarKalori"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:text="200 cal"
+        android:fontFamily="@font/poppinssemibold"
+        android:textSize="25dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="60dp"
+        android:fontFamily="@font/poppinsbold"
+        android:text="Calories rest"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textSize="25dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:id="@+id/resultSisaKalori"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppinsbold"
+        android:layout_gravity="center"
+        android:text="476 cal"
+        android:textSize="50dp" />
+
+    <TextView
+        android:layout_width="300dp"
+        android:layout_marginLeft="20dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:textSize="15dp"
+        android:text="Notes : One of the great moments in life is realizing that two weeks ago your body couldn't do what it just did"
+        />
+</LinearLayout>

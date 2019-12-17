@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@drawable/bglogin"
+    tools:context=".LoginActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="@font/poppinsregular"
+        android:textColor="@android:color/holo_blue_dark"
+        android:text="Login Page"
+        android:layout_marginLeft="5dp"
+        android:textSize="30dp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/loginNama"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:hint="Name" />
+
+        <EditText
+            android:id="@+id/loginUmur"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:hint="Age"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/loginGender"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:hint="Gender" />
+
+        <LinearLayout
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/loginTinggi"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:hint="Height"
+                android:inputType="number" />
+
+            <EditText
+                android:id="@+id/loginBerat"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:hint="Weight"
+                android:inputType="number" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="suksesLogin"
+        android:background="@color/hijauKotak"
+        android:text="Login"
+
+        />
+</LinearLayout>

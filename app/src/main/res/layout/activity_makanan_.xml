@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Makanan_Activity">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/makananThumbnail"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:background="#2d2d2d"
+                android:scaleType="fitCenter" />
+
+            <TextView
+                android:id="@+id/txtNama"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/poppinsbold"
+                android:text="Nama Makanan"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/txtKategori"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/poppinsregular"
+                android:padding="8dp"
+                android:text="Kategori" />
+
+            <TextView
+                android:id="@+id/txtKalori"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppinsregular"
+                android:layout_marginTop="10dp"
+                android:padding="8dp"
+                android:text="Kalori" />
+
+            <TextView
+                android:id="@+id/txtDescription"
+                android:layout_width="wrap_content"
+                android:fontFamily="@font/poppinsregular"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Description"
+                android:padding="8dp"
+                android:textSize="10sp" />
+
+            <EditText
+                android:id="@+id/inputQty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppinsregular"
+                android:layout_marginTop="10dp"
+                android:hint="qty"
+                android:layout_gravity="center"
+                android:inputType="number"
+                android:padding="8dp" />
+
+            <!--<Button-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:fontFamily="@font/poppinssemibold"-->
+                <!--android:id="@+id/buttonTest"-->
+                <!--android:onClick="buttonTest"-->
+                <!--android:text="Submit"-->
+                <!--/>-->
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|bottom"
+        android:layout_margin="16dp"
+        android:backgroundTint="@android:color/white"
+        android:onClick="buttonTest"
+        android:src="@drawable/ic_check_circle_24px" />
+
+</FrameLayout>
