@@ -12,6 +12,7 @@ public class ResultActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_result);
+        int a;
 
         TextView tvTotalKalori = (TextView)findViewById(R.id.resultTotalKalori);
         TextView tvSisaKalori = (TextView)findViewById(R.id.resultSisaKalori);
