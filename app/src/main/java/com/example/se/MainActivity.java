@@ -74,4 +74,11 @@ public class MainActivity extends AppCompatActivity {
         startActivity(i);
         finish();
     }
+
+    @Override
+    public void onBackPressed() {
+        Toast t = Toast.makeText(getApplicationContext(),"Tidak bisa kembali!", Toast.LENGTH_LONG);
+        t.show();
+    }
+
 }

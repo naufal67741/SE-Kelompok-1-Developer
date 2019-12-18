@@ -2,6 +2,7 @@ package com.example.se;
 
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.TextUtils;
@@ -22,6 +23,12 @@ public class LoginActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
+    }
+
+    @Override
+    public void onBackPressed() {
+        Toast t = Toast.makeText(getApplicationContext(),"Tidak bisa kembali!", Toast.LENGTH_LONG);
+        t.show();
     }
 
     public void suksesLogin(View view) {
@@ -103,6 +110,5 @@ public class LoginActivity extends AppCompatActivity {
         editor.apply();
 
         startActivity(i);
-
     }
 }

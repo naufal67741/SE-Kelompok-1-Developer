@@ -10,7 +10,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="50dp"
+        android:layout_marginLeft="40dp"
         android:layout_marginTop="10dp"
         android:fontFamily="@font/poppinsbold"
         android:text="Calories result"
@@ -77,5 +77,13 @@
         android:layout_marginTop="100dp"
         android:textSize="15dp"
         android:text="Notes : One of the great moments in life is realizing that two weeks ago your body couldn't do what it just did"
+        />
+
+    <Button
+        android:layout_marginLeft="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="exit"
+        android:onClick="babay"
         />
 </LinearLayout>

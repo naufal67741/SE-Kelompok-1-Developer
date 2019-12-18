@@ -1,8 +1,11 @@
 package com.example.se;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import org.w3c.dom.Text;
 
@@ -26,5 +29,16 @@ public class ResultActivity extends AppCompatActivity {
         tvSisaKalori.setText(tk.getSisaKalori()+" CAL");
         tvBakarKalori.setText(tk.getBakarKalori()+" calories");
 
+    }
+
+    @Override
+    public void onBackPressed() {
+        Toast t = Toast.makeText(getApplicationContext(),"Tidak bisa kembali!", Toast.LENGTH_LONG);
+        t.show();
+    }
+
+    public void babay(View view) {
+        Intent i = new Intent(getApplicationContext(), ExitActivity.class);
+        startActivity(i);
     }
 }

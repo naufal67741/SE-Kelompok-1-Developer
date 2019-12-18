@@ -83,4 +83,6 @@ public class Makanan_Activity extends AppCompatActivity {
         }
 
     }
+
+
 }
